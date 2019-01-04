@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfilActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Merci de renseigner votre profil :"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/profilTitle"
+        android:textSize="30dp"
+        android:textColor="@color/TextBlack"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textAlignment="center"
+        android:paddingTop="60dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        />
+
+    <EditText
+        android:hint="Nom"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/text_input_shape"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/nom"
+        app:layout_constraintTop_toBottomOf="@+id/profilTitle"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+    <EditText
+        android:hint="Prenom"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/text_input_shape"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/prenom"
+        app:layout_constraintTop_toBottomOf="@+id/nom"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <EditText
+        android:hint="Date de naissance"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/text_input_shape"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/dateNaissance"
+        android:inputType="date"
+        app:layout_constraintTop_toBottomOf="@+id/prenom"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <Button
+        android:textAllCaps="false"
+        android:textSize="25dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/button_shape"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Valider"
+        android:id="@+id/valider"
+        android:onClick="clickValider"
+        android:textColor="@color/textWhite"
+        app:layout_constraintTop_toBottomOf="@+id/dateNaissance"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Mad Rental</string>
+    <string name="title_activity_reservation">ReservationActivity</string>
+</resources>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:fontFamily="sans-serif"
+        android:textStyle="italic"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mad Rental"
+        android:id="@+id/title"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="50dp"
+        android:paddingTop="20dp"
+        android:textColor="@color/redTitle"/>
+
+    <Button
+        android:onClick="clickReservation"
+        android:textAllCaps="false"
+        android:textSize="25dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/button_shape"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Mes Réservations"
+        android:id="@+id/reservations"
+        android:textColor="@color/textWhite"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+
+    <Button
+        android:onClick="clickProfil"
+        android:textAllCaps="false"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/button_shape"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Mon profil"
+        android:textColor="@color/textWhite"
+        android:id="@+id/profil"
+        android:textSize="25dp"
+        app:layout_constraintTop_toBottomOf="@+id/reservations"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <TextView
+        android:layout_marginTop="45dp"
+        android:layout_marginBottom="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lancer une recherche :"
+        android:textSize="20dp"
+        android:textColor="@color/TextBlack"
+        android:id="@+id/titleRecherche"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profil"/>
+
+    <EditText
+        android:hint="Date de début de reservation"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/text_input_shape"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/dateDebutReservation"
+        android:inputType="date"
+        app:layout_constraintTop_toBottomOf="@+id/titleRecherche"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <EditText
+        android:hint="Date de fin de reservation"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/text_input_shape"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/dateFinReservation"
+        android:inputType="date"
+        app:layout_constraintTop_toBottomOf="@+id/dateDebutReservation"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <Button
+        android:textAllCaps="false"
+        android:textSize="25dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/button_shape"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Rechercher"
+        android:onClick="clickRecherche"
+        android:id="@+id/rerchercher"
+        android:textColor="@color/textWhite"
+        app:layout_constraintTop_toBottomOf="@+id/dateFinReservation"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>
